@@ -976,21 +976,6 @@ require("lazy").setup({
 		-- version = "*"
 	},
 	{
-		"junnplus/lsp-setup.nvim",
-		dependencies = {
-			"neovim/nvim-lspconfig",
-			"williamboman/mason.nvim", -- optional
-			"williamboman/mason-lspconfig.nvim", -- optional
-		},
-		config = function(_, _)
-			require("lsp-setup").setup({
-				inlay_hints = {
-					enabled = true,
-				},
-			})
-		end,
-	},
-	{
 		"alec-gibson/nvim-tetris",
 		cmd = "Tetris",
 		-- because LOL
